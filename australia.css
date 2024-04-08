@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(215, 245, 253) !important;
+    margin: 0;
+}
+
+nav {
+    background-color: #02091f;
+    padding: 25px;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ulNavbar {
+    list-style-type: none;
+}
+
+.ulNavbar li {
+    display: inline-block;
+    margin-left: 20px;
+    float: right;
+}
+
+.ulNavbar li a {
+    color: rgb(162, 247, 219);
+    text-decoration: none;
+    transition: font-weight 0.3s;
+}
+
+.ulNavbar li a:hover {
+    color: rgb(30, 154, 96);
+    font-weight: bold;
+}
+
+.navbar-brand {
+    padding-left: 40px;
+}
+
+@media (max-width: 700px) {
+    header {}
+}
+
+.map {
+    margin: auto;
+    width: 35%;
+    padding: 0;
+}
+
+.map path {
+    stroke: aquamarine;
+    stroke-width: 2px;
+}
+
+.map path:hover {
+    fill: rgb(7, 43, 110);
+}
+
+.contenedor {
+    background-image: url(ocean.jpg);
+    background-size: cover;
+}
+
+.titulo {
+    padding-top: 10px;
+    text-align: center;
+    color: black;
+}
+
+.parrafo {
+    max-width: 600px;
+    padding-bottom: 15px;
+    margin: auto;
+    text-align: center;
+    color: black;
+}
+
+.hovered {
+    background-color: rgb(123, 207, 235);
+    fill: rgb(76, 16, 133);
+}
+
+.bodyContainer {
+    padding: 0 0px;
+}
+
+.card {
+    background-color: rgb(186, 231, 246) !important;
+    border: 1px solid rgb(2, 148, 153) !important;
+}
+
+.card-body:hover {
+    background-color: rgb(123, 207, 235);
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.infoEstados {
+    padding: 30px 300px;
+}
+
+.infoGeneral {
+    padding: 30px 300px;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+}
