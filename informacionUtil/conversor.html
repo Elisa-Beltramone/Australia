@@ -78,24 +78,24 @@
     <form id="currency-form">
       <input type="number" id="amount" placeholder="Cantidad" required>
       <select id="from" required>
-        <option value="AUD">AUD</option>
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="GBP">GBP</option>
+          <option value="">De</option>
+          <!-- Agrega opciones para las monedas de origen -->
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="GBP">GBP</option>
       </select>
       <select id="to" required>
-        <option value="USD">USD</option>
-        <option value="EUR">EUR</option>
-        <option value="GBP">GBP</option>
-        <option value="JPY">JPY</option>
-        <option value="CAD">CAD</option>
+          <option value="">A</option>
+          <!-- Agrega opciones para las monedas de destino -->
+          <option value="AUD">AUD</option>
+          <option value="JPY">JPY</option>
+          <option value="CAD">CAD</option>
       </select>
       <button type="submit">Convertir</button>
-    </form>
-
-    <div id="result-container" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc;"></div>
-
-
+  </form>
+  
+  <div id="result-container" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc;"></div>
+  
 
   </div>
 

@@ -24,27 +24,29 @@ estados.forEach(estado => {
 });
 
 // conversor divisas
-document.getElementById('currency-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+const form = document.getElementById('currency-form');
+const resultDiv = document.getElementById('result');
 
+form.addEventListener('submit', async function(event) {
+    event.preventDefault();
+    
     const amount = document.getElementById('amount').value;
     const fromCurrency = document.getElementById('from').value;
     const toCurrency = document.getElementById('to').value;
-
-    const url = `https://api.exchangeratesapi.io/latest?base=${fromCurrency}&symbols=${toCurrency}`;
-
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            if (data.rates[toCurrency]) {
-                const result = (amount * data.rates[toCurrency]).toFixed(2);
-                document.getElementById('result-container').textContent = `Resultado: ${result} ${toCurrency}`;
-            } else {
-                document.getElementById('result-container').textContent = 'No se encontró la tasa de cambio para la moneda de destino.';
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            document.getElementById('result-container').textContent = 'Error al convertir la divisa. Por favor, inténtalo de nuevo.';
-        });
+    
+    const apiKey = 'API_KEY'; // Reemplaza 'API_KEY' con tu propia clave de API de ExchangeRate-API.io
+    const url = `https://api.exchangerate-api.com/v4/latest/${fromCurrency}`;
+    
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        
+        const rate = data.rates[toCurrency];
+        const result = (amount * rate).toFixed(2);
+        
+        resultDiv.textContent = `${amount} ${fromCurrency} = ${result} ${toCurrency}`;
+    } catch (error) {
+        console.error('Error:', error);
+        resultDiv.textContent = 'Error al convertir la divisa. Por favor, inténtalo de nuevo.';
+    }
 });
