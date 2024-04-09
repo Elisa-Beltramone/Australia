@@ -110,3 +110,35 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+    nav {
+        padding: 10px;
+    }
+    
+    .ulNavbar li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        padding-left: 0;
+    }
+
+    .map {
+        width: 80%;
+    }
+
+    .titulo, .parrafo, .bodyContainer {
+        padding: 0 5px;
+    }
+
+    .infoEstados, .infoGeneral {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
+}
