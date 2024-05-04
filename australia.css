@@ -4,12 +4,15 @@ body {
 }
 
 nav {
-    background-color: #02091f;
+    background-color: transparent;
     padding: 25px;
     margin: 0;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+.navbar-notdark {
+    color: black;
 }
 
 .ulNavbar {
@@ -22,15 +25,10 @@ nav {
     float: right;
 }
 
-.ulNavbar li a {
-    color: rgb(162, 247, 219);
-    text-decoration: none;
-    transition: font-weight 0.3s;
-}
-
-.ulNavbar li a:hover {
+.navbar-brand a:hover {
     color: rgb(30, 154, 96);
     font-weight: bold;
+    transition: font-weight 0.3s;
 }
 
 .navbar-brand {
@@ -44,12 +42,13 @@ nav {
 .map {
     margin: auto;
     width: 35%;
-    padding: 0;
+    padding: 0;  
 }
 
 .map path {
-    stroke: aquamarine;
-    stroke-width: 2px;
+    stroke: #011113;
+    stroke-width: 3px;
+    fill: #1295a3; 
 }
 
 .map path:hover {

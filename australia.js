@@ -1,6 +1,7 @@
-// Estados de Australia
+// Array de nombres de los estados de Australia
 const estados = ['Western', 'Queensland', 'Victoria', 'Northern', 'New', 'Tasmania', 'South'];
 
+// Recorre cada estado y agrega los eventos hover
 estados.forEach(estado => {
     const map = document.getElementById(`map${estado}`);
     const contenedor = document.getElementById(`card${estado}`);
@@ -16,7 +17,7 @@ estados.forEach(estado => {
     contenedor.addEventListener('mouseover', () => {
         map.classList.add('hovered');
     });
-    
+
     contenedor.addEventListener('mouseout', () => {
         map.classList.remove('hovered');
     });

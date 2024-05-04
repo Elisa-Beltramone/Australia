@@ -83,17 +83,43 @@
   <div class="infoGeneral">
 
     <h1>Trucos Viajeros</h1>
-    <p>Hay muchos tips de viaje que se van conociendo con el tiempo, además que aparecen nuevos. Acá te dejo los que fui conociendo con el tiempo para que puedas aprovecharlos.</p>
+    <p>Hay muchos tips de viaje que se van conociendo con el tiempo, además que aparecen nuevos. Acá te dejo los que fui
+      conociendo con el tiempo para que puedas aprovecharlos.</p>
     <h3>Couchsurfing</h3>
+    <p></p>
     <h3>Workaway</h3>
+    <p></p>
     <h3>IOverLander</h3>
+    <p></p>
     <h3>MapsMe</h3>
+    <p></p>
     <h3>BlablaCar</h3>
+    <p></p>
     <h3>Rome2Rio</h3>
+    <p></p>
     <h3>FindACrew</h3>
+    <p></p>
     <h3>Revolut</h3>
+    <p></p>
 
-    
+    <p>Estas son las que más me sirvieron a mi durante mis viajes, pero como dije antes siempre aperecen nuevas, si
+      tenés alguna que no esté y te parezca que puede ayuda a más viajeros dejala en comentarios o mandame un mail y la
+      agrego a la lista.</p>
+
+      <h2>Comentarios:</h2>
+    <!-- Aquí mostrarás los comentarios guardados -->
+    <?php include 'mostrar_comentarios.php'; ?>
+
+    <!-- Formulario para enviar comentarios -->
+    <form action="guardar_comentario.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="comentario">Comentario:</label><br>
+        <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Enviar comentario">
+    </form>
 
   </div>
 
