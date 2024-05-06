@@ -35,10 +35,6 @@ nav {
     padding-left: 40px;
 }
 
-@media (max-width: 700px) {
-    header {}
-}
-
 .map {
     margin: auto;
     width: 35%;
